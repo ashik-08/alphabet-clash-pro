@@ -26,8 +26,9 @@
     <main
       class="bg-[#010313] min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center"
     >
+      <!-- homepage -->
       <section
-        class="home text-white text-center min-h-screen content-center space-y-6 px-2"
+        class="home text-white text-center min-h-screen content-center space-y-6 p-2 hidden"
       >
         <h1 class="text-5xl md:text-7xl font-extrabold uppercase">
           Alphabet clash pro
@@ -37,7 +38,74 @@
           Play Now
         </button>
       </section>
-      <section class="playground"></section>
+      <!-- playground page -->
+      <section
+        class="playground text-center min-h-screen content-center space-y-10 p-2 hidden"
+      >
+        <!-- screen -->
+        <div
+          class="max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto h-[40vh] bg-[#ffffffe7] border-[20px] border-[#010313CC] rounded-2xl"
+        >
+          <p
+            class="bg-[#010313CC] text-white mx-auto w-fit px-2 sm:px-6 pb-3 rounded-b-xl"
+          >
+            Don't watch keyboard while playing...
+          </p>
+          <p class="text-8xl font-bold uppercase h-5/6 content-center">y</p>
+        </div>
+        <!-- keyboard -->
+        <div class="space-y-4">
+          <div class="my-1 flex w-full justify-center gap-2">
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">q</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">w</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">e</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">r</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">t</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">y</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">u</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">i</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">o</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">p</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-2">
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">a</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">s</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">d</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">f</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">g</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">h</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">j</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">k</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">l</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-2">
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">z</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">x</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">c</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">v</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">b</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">n</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">m</kbd>
+            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">/</kbd>
+          </div>
+        </div>
+        <!-- life & score -->
+        <div class="flex justify-around">
+          <button
+            class="flex items-center gap-2 bg-[#894189] text-white text-lg font-medium px-8 py-3 rounded-full"
+          >
+            Life
+            <img src="./images/life.svg" alt="" />
+            <span>1</span>
+          </button>
+          <button
+            class="flex items-center gap-2 bg-[#360490] text-white text-lg font-medium px-8 py-3 rounded-full"
+          >
+            Score<img src="./images/score.svg" alt="" /><span>1</span>
+          </button>
+        </div>
+      </section>
+      <!-- score page -->
       <section class="score"></section>
     </main>
   </body>
