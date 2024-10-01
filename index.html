@@ -27,20 +27,20 @@
       class="bg-[#010313] min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center"
     >
       <!-- homepage -->
-      <section
-        class="home text-white text-center min-h-screen content-center space-y-6 p-2"
+      <section id="home-screen"
+        class="text-white text-center min-h-screen content-center space-y-6 p-2"
       >
         <h1 class="text-5xl md:text-7xl font-extrabold uppercase">
           Alphabet clash pro
         </h1>
         <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button class="bg-white text-black font-medium px-4 py-2.5 rounded-md">
+        <button onclick="startPlay()" class="bg-white text-black font-medium px-4 py-2.5 rounded-md">
           Play Now
         </button>
       </section>
       <!-- playground page -->
-      <section
-        class="playground text-center min-h-screen content-center space-y-10 p-2 hidden"
+      <section id="playground"
+        class="text-center min-h-screen content-center space-y-10 p-2 hidden"
       >
         <!-- screen -->
         <div
@@ -125,5 +125,6 @@
         </div>
       </section>
     </main>
+    <script src="./scripts/alphaClash.js"></script>
   </body>
 </html>
