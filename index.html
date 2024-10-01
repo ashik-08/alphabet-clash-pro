@@ -28,7 +28,7 @@
     >
       <!-- homepage -->
       <section
-        class="home text-white text-center min-h-screen content-center space-y-6 p-2 hidden"
+        class="home text-white text-center min-h-screen content-center space-y-6 p-2"
       >
         <h1 class="text-5xl md:text-7xl font-extrabold uppercase">
           Alphabet clash pro
@@ -40,7 +40,7 @@
       </section>
       <!-- playground page -->
       <section
-        class="playground text-center min-h-screen content-center space-y-10 p-2"
+        class="playground text-center min-h-screen content-center space-y-10 p-2 hidden"
       >
         <!-- screen -->
         <div
@@ -106,7 +106,24 @@
         </div>
       </section>
       <!-- score page -->
-      <section class="score"></section>
+      <section
+        class="score w-4/5 md:w-2/5 lg:w-1/3 xl:w-1/5 2xl:w-1/6 h-screen mx-auto content-center hidden"
+      >
+        <div
+          class="bg-[#ffffff73] text-white text-center space-y-4 rounded-2xl py-6"
+        >
+          <h1 class="text-5xl">
+            <span class="font-bold">Score :</span>
+            <span class="font-medium">14</span>
+          </h1>
+          <button
+            class="bg-white text-black font-medium px-4 py-2.5 rounded-md"
+          >
+            Play Again
+          </button>
+          <p>Practice will make you Pro</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
