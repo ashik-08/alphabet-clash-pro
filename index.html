@@ -106,27 +106,32 @@
           >
             Life
             <img src="./images/life.svg" alt="" />
-            <span>1</span>
+            <span id="life-remaining">5</span>
           </button>
           <button
             class="flex items-center gap-2 bg-[#360490] text-white text-lg font-medium px-8 py-3 rounded-full"
           >
-            Score<img src="./images/score.svg" alt="" /><span>1</span>
+            Score<img src="./images/score.svg" alt="" /><span id="current-score"
+              >0</span
+            >
           </button>
         </div>
       </section>
-      <!-- score page -->
+      <!-- final score card page -->
       <section
+        id="final-score-card"
         class="score w-4/5 md:w-2/5 lg:w-1/3 xl:w-1/5 2xl:w-1/6 h-screen mx-auto content-center hidden"
       >
         <div
           class="bg-[#ffffff73] text-white text-center space-y-4 rounded-2xl py-6"
         >
-          <h1 class="text-5xl">
+          <h1 class="text-4xl font-bold text-red-600">Game Over!</h1>
+          <h2 class="text-5xl">
             <span class="font-bold">Score :</span>
-            <span class="font-medium">14</span>
-          </h1>
+            <span id="total-score" class="font-medium">0</span>
+          </h2>
           <button
+            onclick="startPlay()"
             class="bg-white text-black font-medium px-4 py-2.5 rounded-md"
           >
             Play Again
