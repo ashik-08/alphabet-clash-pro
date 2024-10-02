@@ -25,7 +25,25 @@ function playing() {
 
   const addKeyHighlighter = document.getElementById(alphabet);
   addKeyHighlighter.classList.add("bg-[#FFA500]");
+}
 
-  const removeKeyHighlighter = document.getElementById(alphabet);
-  removeKeyHighlighter.classList.add("bg-[#FFA500]");
+// capture keyboard key-press
+document.addEventListener("keyup", handleKeyboardKeyUpEvent);
+
+function handleKeyboardKeyUpEvent(event) {
+  const pressed = event.key;
+  const currentLetter = document
+    .getElementById("display-alphabet")
+    .innerText.toLowerCase();
+  console.log(currentLetter);
+
+  // check for match
+  if (pressed === currentLetter) {
+    // remove previous key highlight
+    const removeKeyHighlighter = document.getElementById(currentLetter);
+    removeKeyHighlighter.classList.remove("bg-[#FFA500]");
+    playing();
+  } else {
+    console.log("you missed a point");
+  }
 }
