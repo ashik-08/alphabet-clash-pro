@@ -27,19 +27,24 @@
       class="bg-[#010313] min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center"
     >
       <!-- homepage -->
-      <section id="home-screen"
+      <section
+        id="home-screen"
         class="text-white text-center min-h-screen content-center space-y-6 p-2"
       >
         <h1 class="text-5xl md:text-7xl font-extrabold uppercase">
           Alphabet clash pro
         </h1>
         <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button onclick="startPlay()" class="bg-white text-black font-medium px-4 py-2.5 rounded-md">
+        <button
+          onclick="startPlay()"
+          class="bg-white text-black font-medium px-4 py-2.5 rounded-md"
+        >
           Play Now
         </button>
       </section>
       <!-- playground page -->
-      <section id="playground"
+      <section
+        id="playground"
         class="text-center min-h-screen content-center space-y-10 p-2 hidden"
       >
         <!-- screen -->
@@ -51,42 +56,47 @@
           >
             Don't watch keyboard while playing...
           </p>
-          <p class="text-8xl font-bold uppercase h-5/6 content-center">y</p>
+          <p
+            id="display-alphabet"
+            class="text-8xl font-bold uppercase h-5/6 content-center"
+          >
+            y
+          </p>
         </div>
         <!-- keyboard -->
         <div class="space-y-4">
           <div class="my-1 flex w-full justify-center gap-2">
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">q</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">w</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">e</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">r</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">t</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">y</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">u</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">i</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">o</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">p</kbd>
+            <kbd id="q" class="kbd kbd-sm sm:kbd-md md:kbd-lg">q</kbd>
+            <kbd id="w" class="kbd kbd-sm sm:kbd-md md:kbd-lg">w</kbd>
+            <kbd id="e" class="kbd kbd-sm sm:kbd-md md:kbd-lg">e</kbd>
+            <kbd id="r" class="kbd kbd-sm sm:kbd-md md:kbd-lg">r</kbd>
+            <kbd id="t" class="kbd kbd-sm sm:kbd-md md:kbd-lg">t</kbd>
+            <kbd id="y" class="kbd kbd-sm sm:kbd-md md:kbd-lg">y</kbd>
+            <kbd id="u" class="kbd kbd-sm sm:kbd-md md:kbd-lg">u</kbd>
+            <kbd id="i" class="kbd kbd-sm sm:kbd-md md:kbd-lg">i</kbd>
+            <kbd id="o" class="kbd kbd-sm sm:kbd-md md:kbd-lg">o</kbd>
+            <kbd id="p" class="kbd kbd-sm sm:kbd-md md:kbd-lg">p</kbd>
           </div>
           <div class="my-1 flex w-full justify-center gap-2">
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">a</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">s</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">d</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">f</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">g</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">h</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">j</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">k</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">l</kbd>
+            <kbd id="a" class="kbd kbd-sm sm:kbd-md md:kbd-lg">a</kbd>
+            <kbd id="s" class="kbd kbd-sm sm:kbd-md md:kbd-lg">s</kbd>
+            <kbd id="d" class="kbd kbd-sm sm:kbd-md md:kbd-lg">d</kbd>
+            <kbd id="f" class="kbd kbd-sm sm:kbd-md md:kbd-lg">f</kbd>
+            <kbd id="g" class="kbd kbd-sm sm:kbd-md md:kbd-lg">g</kbd>
+            <kbd id="h" class="kbd kbd-sm sm:kbd-md md:kbd-lg">h</kbd>
+            <kbd id="j" class="kbd kbd-sm sm:kbd-md md:kbd-lg">j</kbd>
+            <kbd id="k" class="kbd kbd-sm sm:kbd-md md:kbd-lg">k</kbd>
+            <kbd id="l" class="kbd kbd-sm sm:kbd-md md:kbd-lg">l</kbd>
           </div>
           <div class="my-1 flex w-full justify-center gap-2">
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">z</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">x</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">c</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">v</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">b</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">n</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">m</kbd>
-            <kbd class="kbd kbd-sm sm:kbd-md md:kbd-lg">/</kbd>
+            <kbd id="z" class="kbd kbd-sm sm:kbd-md md:kbd-lg">z</kbd>
+            <kbd id="x" class="kbd kbd-sm sm:kbd-md md:kbd-lg">x</kbd>
+            <kbd id="c" class="kbd kbd-sm sm:kbd-md md:kbd-lg">c</kbd>
+            <kbd id="v" class="kbd kbd-sm sm:kbd-md md:kbd-lg">v</kbd>
+            <kbd id="b" class="kbd kbd-sm sm:kbd-md md:kbd-lg">b</kbd>
+            <kbd id="n" class="kbd kbd-sm sm:kbd-md md:kbd-lg">n</kbd>
+            <kbd id="m" class="kbd kbd-sm sm:kbd-md md:kbd-lg">m</kbd>
+            <kbd id="/" class="kbd kbd-sm sm:kbd-md md:kbd-lg">/</kbd>
           </div>
         </div>
         <!-- life & score -->
